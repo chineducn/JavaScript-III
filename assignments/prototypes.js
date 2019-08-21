@@ -85,6 +85,20 @@ Person.prototype.poop = function() {
   - Give cars the ability to be repaired.
   - A repaired car can be driven again.
 */
+
+function Car(model, make) {
+  this.model = model;
+  this.make = make;
+}
+
+Car.prototype.distanceDriven = function() {
+
+}
+
+Car.prototype.crashed = function() {
+
+}
+
 /*
   TASK 3
 
@@ -93,6 +107,17 @@ Person.prototype.poop = function() {
   - Babies should have the ability to play, which persons don't.
   - By playing, a string is returned with some text of your choosing.
 */
+
+function Baby(name, age) {
+  Person.call(this, name, age);
+}
+
+Baby.prototype.play = function() {
+  return `${this.name} loves to play`;
+}
+
+// let firstborn = new Baby('chris', 5)
+// console.log(firstborn.play());
 
 /*
   TASK 4
