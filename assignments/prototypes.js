@@ -1,39 +1,39 @@
-/*
 
-  In order to do these exercises you'll need your newly acquired knowledge on
-  constructor functions, methods, prototypes and the `this` keyword.
-  Here's an example of an exercise:
 
-  TASK 0:
+  // In order to do these exercises you'll need your newly acquired knowledge on
+  // constructor functions, methods, prototypes and the `this` keyword.
+  // Here's an example of an exercise:
 
-  - Build an Airplane constructor that takes a name.
-  - Give airplanes the ability to take off and land.
-  - If a plane takes off, its "isFlying" property is true.
-  - If a plane lands, its "isFlying" property is false.
+  // TASK 0:
 
-  SOLUTION CODE:
+  // - Build an Airplane constructor that takes a name.
+  // - Give airplanes the ability to take off and land.
+  // - If a plane takes off, its "isFlying" property is true.
+  // - If a plane lands, its "isFlying" property is false.
 
-  function Airplane(name) {
-    this.name = name;
-    this.isFlying = false;
-  }
-  Airplane.prototype.takeOff = function () {
-    this.isFlying = true;
-  }
-  Airplane.prototype.land = function () {
-    this.isFlying = false;
-  }
+  // SOLUTION CODE:
 
-  HOW TO TEST OUR SOLUTION:
+  // function Airplane(name) {
+  //   this.name = name;
+  //   this.isFlying = false;
+  // }
+  // Airplane.prototype.takeOff = function () {
+  //   this.isFlying = true;
+  // }
+  // Airplane.prototype.land = function () {
+  //   this.isFlying = false;
+  // }
 
-  const jumbo = new Airplane('Jumbo');
-  console.log(jumbo.name)              // 'Jumbo'
-  console.log(jumbo.isFlying)          // false
-  jumbo.takeOff();
-  console.log(jumbo.isFlying)          // true
-  jumbo.land();
-  console.log(jumbo.isFlying)          // false
-*/
+  // HOW TO TEST OUR SOLUTION:
+
+  // const jumbo = new Airplane('Jumbo');
+  // console.log(jumbo.name)              // 'Jumbo'
+  // console.log(jumbo.isFlying)          // false
+  // jumbo.takeOff();
+  // console.log(jumbo.isFlying)          // true
+  // jumbo.land();
+  // console.log(jumbo.isFlying)          // false
+
 
 /*
 
@@ -46,6 +46,9 @@
   - Give persons the ability to poop.
   - When pooping, the stomach should empty.
 
+  function 
+*/
+/*
   TASK 2
 
   - Build a Car constructor that takes model name and make.
@@ -55,14 +58,17 @@
   - A crashed car can't be driven any more. Attempts return a string "I crashed at x miles!", x being the miles in the odometer.
   - Give cars the ability to be repaired.
   - A repaired car can be driven again.
-
+*/
+/*
   TASK 3
 
   - Build a Baby constructor that subclasses the Person built earlier.
   - Babies of course inherit the ability to greet, which can be strange.
   - Babies should have the ability to play, which persons don't.
   - By playing, a string is returned with some text of your choosing.
+*/
 
+/*
   TASK 4
 
   Use your imagination and come up with constructors that allow to build objects
