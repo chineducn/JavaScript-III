@@ -59,8 +59,20 @@ Person.prototype.greet = function() {
   return `Hi, my name is ${this.name} and I'm ${this.age}`;
 }
 Person.prototype.eatEdible = function(edible) {
-  
+  this.stomach.push(edible);
 }
+Person.prototype.poop = function() {
+  this.stomach = [];
+}
+
+// let first = new Person('John', 45);
+// console.log(first.greet());
+// first.eatEdible('cookie');
+// first.eatEdible('apple');
+// first.eatEdible('pie');
+// console.log(first.stomach);
+// first.poop();
+// console.log(first.stomach);
 
 /*
   TASK 2
