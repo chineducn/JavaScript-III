@@ -13,16 +13,18 @@
 
   // SOLUTION CODE:
 
-  // function Airplane(name) {
-  //   this.name = name;
-  //   this.isFlying = false;
-  // }
-  // Airplane.prototype.takeOff = function () {
-  //   this.isFlying = true;
-  // }
-  // Airplane.prototype.land = function () {
-  //   this.isFlying = false;
-  // }
+  /*
+   function Airplane(name) {
+     this.name = name;
+     this.isFlying = false;
+   }
+   Airplane.prototype.takeOff = function () {
+     this.isFlying = true;
+   }
+   Airplane.prototype.land = function () {
+     this.isFlying = false;
+   }
+  */
 
   // HOW TO TEST OUR SOLUTION:
 
@@ -44,10 +46,22 @@
   - Give persons the ability to eat edibles.
   - When eating an edible, it should be pushed into a "stomach" property which is an array.
   - Give persons the ability to poop.
-  - When pooping, the stomach should empty.
-
-  function 
+  - When pooping, the stomach should empty. 
 */
+
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.stomach = [];
+}
+
+Person.prototype.greet = function() {
+  return `Hi, my name is ${this.name} and I'm ${this.age}`;
+}
+Person.prototype.eatEdible = function(edible) {
+  
+}
+
 /*
   TASK 2
 
