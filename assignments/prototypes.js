@@ -89,15 +89,22 @@ Person.prototype.poop = function() {
 function Car(model, make) {
   this.model = model;
   this.make = make;
+  this.odometer = 0;
 }
 
-Car.prototype.distanceDriven = function() {
-
+Car.prototype.drive = function(distance) {
+  this.odometer += distance;
 }
 
 Car.prototype.crashed = function() {
 
 }
+
+// let myfirst = new Car('nissan', 'sunny');
+// myfirst.drive(120);
+// console.log(myfirst.odometer);
+// myfirst.drive(120);
+// console.log(myfirst.odometer);
 
 /*
   TASK 3
