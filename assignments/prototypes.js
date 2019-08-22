@@ -87,8 +87,8 @@ Person.prototype.poop = function() {
 */
 
 function Car(model, make) {
-  this.model = model;
-  this.make = make;
+  this.car_model = model;
+  this.car_make = make;
   this.odometer = 0;
   this.canBeDriven = true;
 }
@@ -131,12 +131,14 @@ function Baby(name, age) {
   Person.call(this, name, age);
 }
 
+Baby.prototype = Object.create(Person.prototype);
 Baby.prototype.play = function() {
   return `${this.name} loves to play`;
 }
 
-// let firstborn = new Baby('chris', 5)
-// console.log(firstborn.play());
+let firstborn = new Baby('chris', 5)
+console.log(firstborn.play());
+console.log(firstborn.greet());
 
 /*
   TASK 4
