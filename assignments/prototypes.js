@@ -97,23 +97,26 @@ Car.prototype.drive = function(distance) {
   if(this.canBeDriven) {
    return this.odometer += distance;
   }
-  console.log(`I crashed at ${this.odometer} miles.`);  
+  return `I crashed at ${this.odometer} miles.`;  
 }
 
 Car.prototype.crash = function() {
   return this.canBeDriven = false;
 }
 
-let myfirst = new Car('nissan', 'sunny');
-myfirst.drive(120);
-console.log(myfirst.odometer);
-myfirst.drive(120);
-console.log(myfirst.odometer);
-myfirst.crash();
-myfirst.drive(120);
-myfirst.drive(120);
-myfirst.drive(120);
-myfirst.drive(120);
+Car.prototype.repair = function() {
+  return this.canBeDriven = true;
+}
+
+// let myfirst = new Car('nissan', 'sunny');
+// console.log(myfirst.drive(120));
+// console.log(myfirst.drive(120));
+// myfirst.crash();
+// console.log(myfirst.drive(120));
+// myfirst.repair();
+// console.log(myfirst.drive(120));
+// myfirst.crash();
+// console.log(myfirst.drive(120));
 
 /*
   TASK 3
