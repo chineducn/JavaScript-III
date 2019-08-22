@@ -90,21 +90,30 @@ function Car(model, make) {
   this.model = model;
   this.make = make;
   this.odometer = 0;
+  this.canBeDriven = true;
 }
 
 Car.prototype.drive = function(distance) {
-  this.odometer += distance;
+  if(this.canBeDriven) {
+   return this.odometer += distance;
+  }
+  console.log(`I crashed at ${this.odometer} miles.`);  
 }
 
-Car.prototype.crashed = function() {
-
+Car.prototype.crash = function() {
+  return this.canBeDriven = false;
 }
 
-// let myfirst = new Car('nissan', 'sunny');
-// myfirst.drive(120);
-// console.log(myfirst.odometer);
-// myfirst.drive(120);
-// console.log(myfirst.odometer);
+let myfirst = new Car('nissan', 'sunny');
+myfirst.drive(120);
+console.log(myfirst.odometer);
+myfirst.drive(120);
+console.log(myfirst.odometer);
+myfirst.crash();
+myfirst.drive(120);
+myfirst.drive(120);
+myfirst.drive(120);
+myfirst.drive(120);
 
 /*
   TASK 3
